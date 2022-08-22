@@ -54,7 +54,7 @@ npx uri-scheme add gkash --ios
 
 ### Setup on Android​
 ```
-npx uri-scheme add mychat --android
+npx uri-scheme add gkash --android
 ```
 
 
