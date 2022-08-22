@@ -1,8 +1,21 @@
-import { registerRootComponent } from 'expo';
+function deeplink() {
+    const linking = {
+        prefixes: ['gkash://'],
+        initialRouteName: 'InitialPage',
+        config: {
+          screens: {
+            InitialPage: {
+              path: 'InitialPage',
+            },
+            ResponsePage: {
+              path: 'returntoapp'
+            }
 
-import App from './App';
+          }
+        }
+    };
 
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in Expo Go or in a native build,
-// the environment is set up appropriately
-registerRootComponent(App);
+    return linking;
+}
+
+export default deeplink
