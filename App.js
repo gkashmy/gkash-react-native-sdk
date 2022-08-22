@@ -1,33 +1,10 @@
-import * as React from 'react';
+import React from 'react';
+import { StyleSheet,  View,StatusBar,SafeAreaView } from 'react-native';
+import 'react-native-gesture-handler';
+import Navigator from './components/HomeStack';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { ActivityIndicator } from 'react-native';
+export default function App() {
 
-const Stack = createNativeStackNavigator();
-
-import Home from './Home';
-import Profile from './Profile';
-
-
-const linking = {
-  prefixes: ['gkash://'],
-  initialRouteName: 'Home',
-  config: {
-    screens: {
-      Home: {
-        path: 'home',
-      },
-      Profile: {
-        path: 'profile/:Id'
-      }
-
-    }
-  }
-};
-
-
-function App() {
   return (
     <View style={styles.screen} >
       <StatusBar barStyle='dark-content'/>
