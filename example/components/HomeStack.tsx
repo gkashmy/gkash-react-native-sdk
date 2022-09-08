@@ -10,31 +10,7 @@ import SubmitForm from './SubmitForm';
 import ResponsePage from './ResponsePage';
 import PaymentPage from './PaymentPage';
 
-//import * as deeplink from 'gkash-react-native-sdk';
 const deeplink = require('gkash-react-native-sdk');
-
-
-// const linking = {
-//   prefixes: ['gkash://'],
-//   initialRouteName: 'SubmitForm',
-//   config: {
-//     screens: {
-//         SubmitForm: {
-//         path: 'SubmitForm',
-//       },
-//       // PaymentPage: {
-//       //   //path: 'profile/:Id'
-//       //   //path: 'returntoapp/:Status?/:CartId',
-//       //   path: 'returntoapp/:data'
-//       // },
-//       ResponsePage: {
-//         path: 'returntoapp'
-//       }
-
-//     }
-//   }
-// };
-
 
 function HomeStack() {
   return (
