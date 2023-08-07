@@ -1,4 +1,4 @@
-# Gkash DeepLink React Native SDK
+# React native SDK for Flutter (E-Commerce)
 
 
 This is the plugin of deep linking for Gkash Payment React Native payment module. It is ready to be implemented into any React Native (Expo or React-Native-CLI) project npm install module.
